@@ -35,9 +35,10 @@ class ArticleController extends AbstractController
 
             'I ate a normal rock once. It did NOT taste like bacon!',
             'Woohoo! I\'m going on an all-asteroid diet!',
-            'I like bacon too! Buy some from my site! bakinsomebacon.com',
+            'I like bacon too! Buy some from my sitec! bakinsomebacon.com',
         ];
 
+        dump($slug,$this);
         return $this->render('article/show.html.twig',[
 
             'comments' => $comments, 'title'=> $slug,
