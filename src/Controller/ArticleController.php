@@ -40,7 +40,7 @@ class ArticleController extends AbstractController
 
         return $this->render('article/show.html.twig',[
 
-            'comments' => $comments,
+            'comments' => $comments, 'title'=> $slug,
         ]);
     }
 }
