@@ -38,7 +38,6 @@ class ArticleController extends AbstractController
             'I like bacon too! Buy some from my sitec! bakinsomebacon.com',
         ];
 
-        dump($slug,$this);
         return $this->render('article/show.html.twig',[
 
             'comments' => $comments, 'title'=> $slug,

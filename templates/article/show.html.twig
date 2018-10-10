@@ -1,11 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Read: {{ title }}{% endblock %}
+
 
 {% block body %}
 
-
-<h1>Titre du site</h1>
+<h1>{% block title %}{{ title }}{% endblock %}</h1>
 
 <div>
     <p>
